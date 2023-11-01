@@ -1,7 +1,9 @@
-django
-pillow
-django-crispy-forms
-crispy-bootstrap5
+Requisitos para instalar en el entorno virtual:
+
+  -  django
+  -  pillow
+  -  django-crispy-forms
+  -  crispy-bootstrap5
 
 full command:
 pip install Django pillow django-crispy-forms crispy-bootstrap5
