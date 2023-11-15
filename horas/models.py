@@ -2,11 +2,7 @@ from django.db import models
 from django.contrib.auth.hashers import make_password
 
 
-
-
-
 # Modelos~.
-
 class HoraMedica(models.Model):
     fecha = models.DateField(null=False, blank=False)
     hora = models.TimeField(null=False, blank=False)

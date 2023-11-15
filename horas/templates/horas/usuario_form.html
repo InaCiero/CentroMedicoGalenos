@@ -1,38 +1,37 @@
 {% extends 'horas/base.html' %}
-{% load static %}                                   <!-- Sistema CEMEGA -->
+{% load static %} <!-- Sistema CEMEGA -->
 {% load static crispy_forms_tags %}
 
 {% block content %}
 <!-- Contenedor flotante__________________________________________ PARTE DINÁMICA -->
 <div class="p-4 border shadow">
-    <h2> {% if horamedica %}
-          Edita
-         {% else %}
-          Agenda 
-         {% endif %}
-         tu Hora
+    <h2>{% if usuario %}
+            Edita
+        {% else %}
+            Agrega
+        {% endif %}
+        un Usuario
     </h2>
-<!-- Agenda de Horas -->
+<!-- Formulario para agregar/editar usuario -->
     <form action="" method="post" class="mt-5 mx-auto" style="max-width: 400px;" novalidate>
         {% csrf_token %} <!-- Para mostrar los requisitos de cada campo -->
 
         {{ form|crispy }}
 
         <div class="text-end">
-            <a href="{% url 'horamedica_list' %}" class="btn btn-light me-1">
+            <a href="{% url 'usuario_list' %}" class="btn btn-light me-1">
                 Cancelar
             </a>
             <button class="btn btn-primary">
-                {% if horamedica %}
+                {% if usuario %}
                     Actualizar
                 {% else %}
-                    Agendar 
+                    Agregar
                 {% endif %}
-                Hora
+                Usuario
             </button>
         </div>
     </form>
 </div>
-    
 
 {% endblock content %}
