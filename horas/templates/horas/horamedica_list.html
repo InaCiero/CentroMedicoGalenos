@@ -47,13 +47,13 @@
                 <tr>
                     <td>
                         <div class="fw-bold">{{ horamedica.nom_paciente }}</div>
-                        <div><em>{{ horamedica.rut_paciente }}</em></div>
+                        <div class="">{{ horamedica.rut_paciente }}</div>
                     </td>
-                    <td> {{ horamedica.hora|time:"h:i A" }} </td>
-                    <td> {{ horamedica.fecha|date:"d/m/Y" }}</td>
+                    <td> {{ horamedica.hora }} </td>
+                    <td> {{ horamedica.fecha }}</td>
                     <td>
                         <div class="fw-bold">{{ horamedica.nom_doctor|default:'-' }}</div>
-                        <div><em>{{ horamedica.rut_doctor|default:'-' }}</em></div>
+                        <div>{{ horamedica.rut_doctor|default:'-' }}</div>
                     </td>
                     <td>
                         <div class="btn-group " role="group">
