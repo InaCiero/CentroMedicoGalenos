@@ -6,13 +6,17 @@
     <meta charset="UTF-8">
     <title>Centro Médico Galinos</title>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap5/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap5/js/bootstrap.bundle.min.js' %}"></script>
+    
+    
 
 </head>
 <body>
 <!-- Barra de Navegación~ -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3BB9CF;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'horamedica_list' %}"><strong>CEMEGA</strong></a>
+            <a class="navbar-brand" href="{% url 'index' %}"><strong>CEMEGA</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

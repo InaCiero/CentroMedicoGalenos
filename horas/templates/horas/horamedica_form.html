@@ -14,22 +14,23 @@
     </h2>
 <!-- Agenda de Horas -->
     <form action="" method="post" class="mt-5 mx-auto" style="max-width: 400px;" novalidate>
-    {% csrf_token %} <!-- Para mostrar los requisitos de cada campo -->
+        {% csrf_token %} <!-- Para mostrar los requisitos de cada campo -->
 
-    {{ form|crispy }}
-    <div class="text-end">
-        <a href="{% url 'horamedica_list' %}" class="btn btn-light me-1">
-            Cancelar
-        </a>
-        <button class="btn btn-primary">
-            {% if horamedica %}
-          Actualizar
-         {% else %}
-          Agendar 
-         {% endif %}
-         Hora
-        </button>
-    </div>
+        {{ form|crispy }}
+
+        <div class="text-end">
+            <a href="{% url 'horamedica_list' %}" class="btn btn-light me-1">
+                Cancelar
+            </a>
+            <button class="btn btn-primary">
+                {% if horamedica %}
+                    Actualizar
+                {% else %}
+                    Agendar 
+                {% endif %}
+                Hora
+            </button>
+        </div>
     </form>
 </div>
     

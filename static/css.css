@@ -1,0 +1,24 @@
+#miCarrusel img {
+    max-width: 100%; /* Establece un ancho máximo para las imágenes */
+    height: 90%; /* Establece una altura máxima para las imágenes */
+  }
+  
+  #miCarrusel {
+    margin: auto; /* Establece los márgenes izquierdo y derecho automáticos */
+    width: 70%; /* Ajusta el ancho del carrusel según tus preferencias */
+  }
+
+  .feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.feature img {
+    max-width: 50%;
+}
+
+.feature .text {
+    max-width: 40%;
+}
